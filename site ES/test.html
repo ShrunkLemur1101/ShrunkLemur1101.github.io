@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Scientifique - La disparition de la banquise</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/polar_bear.png);
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .objective-card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+            height: 100%;
+        }
+        .objective-card:hover {
+            transform: translateY(-5px);
+        }
+        .data-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Projet Banquise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#context">Contexte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donnes.html">Analyse des données</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Expe%CC%81rimentations.html">Expériences sur les facteurs externes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conclusion">Conclusion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">La disparition de la banquise</h1>
+            <p class="lead">Un projet expérimental et numérique sur les effets du réchauffement climatique</p>
+        </div>
+    </section>
+
+    <!-- Context Section -->
+    <section id="context" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-4">Contexte du projet</h2>
+                    <p class="lead">L'évolution de la banquise est un indicateur clé du réchauffement climatique. À travers ce projet expérimental et numérique, nous étudions cette évolution à partir de données scientifiques et expérimentons les facteurs influençant cette disparition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectives Section -->
+<section id="objectives" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Objectifs du projet</h2>
+        <div class="row justify-content-center">
+            <!-- Première boîte agrandie -->
+            <div class="col-lg-5 col-xxl-4 mb-4 mb-lg-0 mx-lg-3">
+                <div class="card h-100 shadow" style="min-height: 300px;">  <!-- Hauteur minimale ajoutée -->
+                    <div class="card-body d-flex flex-column p-4">  <!-- Padding augmenté -->
+                        <h4 class="card-title mb-3">Objectif n°1</h4>  <!-- Titre plus grand -->
+                        <p class="card-text flex-grow-1 fs-5">  <!-- Texte plus grand -->
+                            Exploiter les données satellitaires du NSIDC pour analyser l'évolution 
+                            de la superficie de la banquise arctique au cours des dernières décennies 
+                            et établir des projections futures.
+                        </p>
+                        <div class="mt-3">  <!-- Marge supérieure augmentée -->
+                            <a href="https://nsidc.org/home" class="btn btn-primary btn-lg px-4" target="_blank">
+                                <i class="bi bi-database me-2"></i>Accéder aux données
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Deuxième boîte agrandie -->
+            <div class="col-lg-5 col-xxl-4 mx-lg-3">
+                <div class="card h-100 shadow" style="min-height: 300px;">
+                    <div class="card-body d-flex flex-column p-4">
+                        <h4 class="card-title mb-3">Objectif n°2</h4>
+                        <p class="card-text flex-grow-1 fs-5">
+                            Étudier en laboratoire l'impact de différents paramètres (salinité, CO₂ dissous, 
+                            température) sur la vitesse de fonte des glaces à l'aide d'un calorimètre et 
+                            d'instruments de mesure précis.
+                        </p>
+                        <div class="mt-3">
+                            <a href="#experiments" class="btn btn-primary btn-lg px-4">
+                                <i class="bi bi-eyeglasses me-2"></i>Voir les protocoles
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-4">Conclusion</h2>
+                    <p class="lead">(Insérez ici votre conclusion répondant à la problématique initiale)</p>
+                    <div class="bg-white p-4 text-center" style="border: 1px dashed #ccc;">
+                        <p class="text-muted">Votre conclusion sera insérée ici</p>
+                    </div>
+                    <div class="mt-4">
+                        <h4>Discussion</h4>
+                        <p>(Discutez ici des résultats, des limites de l'étude et des perspectives futures)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Projet Scientifique</h5>
+                    <p>La disparition de la banquise - Un indicateur du réchauffement climatique</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Liens utiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://nsidc.org" class="text-white" target="_blank">NSIDC</a></li>
+                        <li><a href="https://nsidc.org/sea-ice-today" class="text-white" target="_blank">Sea Ice Today</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Équipe</h5>
+                    <p>Groupe de 3 élèves</p>
+                    <p>Enseignement Scientifique</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-0">Projet réalisé sur 6 semaines (12 heures) - Date de restitution : [insérer date]</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
