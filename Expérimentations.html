@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expérimentations sur la fonte de la banquise</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+        .hero-section {
+            background-color: #fff7ad;
+            padding: 30px 0;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .protocol-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .results-table {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .conclusion-box {
+            background-color: #e3f2fd;
+            border-left: 5px solid #3665aa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h1, h2, h3 {
+            color: #3665aa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Homepage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#context">Contexte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donnes.html">Analyse des données</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conclusion">Conclusion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <p></p>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section text-center mb-5">
+            <h1 class="display-4">Expérimentations</h1>
+            <p class="lead">En quoi les facteurs externes, la salinité et le CO₂ dissous, influencent-ils l'accélération de la fonte de la banquise ?</p>
+        </div>
+
+        <!-- Introduction -->
+        <div class="row mb-5">
+            <div class="col">
+                <p>Dans cette partie expérimentale, nous avons cherché à comprendre comment <strong>la salinité de l'eau et la présence de CO₂ dissous</strong> affectent la vitesse de fonte des glaces, deux paramètres clés liés aux changements climatiques et à l'acidification des océans.</p>
+            </div>
+        </div>
+
+        <!-- Objectifs -->
+        <div class="row mb-5">
+            <div class="col">
+                <h2 class="mb-4">Objectifs des Expériences</h2>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Évaluer l'effet de la salinité</h5>
+                                <p class="card-text">La banquise fond en contact avec l'eau de mer, dont la salinité varie selon les régions. Nous avons mesuré si une concentration plus élevée en sel accélère ou ralentit la fonte des glaçons.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Analyser l'impact du CO₂ dissous</h5>
+                                <p class="card-text">L'augmentation des émissions de CO₂ entraîne une dissolution accrue de ce gaz dans les océans, modifiant leurs propriétés. Nous avons comparé la fonte des glaces dans de l'eau plate et de l'eau gazeuse pour simuler cet effet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Protocole -->
+        <div class="row mb-5">
+            <div class="col">
+                <h2 class="mb-4">Protocole expérimental</h2>
+                
+                <div class="protocol-card">
+                    <h4>Étape 1 : Préparation des échantillons</h4>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item"><strong>Groupe témoin :</strong> Remplir un bécher avec 100 mL d'eau distillée + 15g de glaçon</li>
+                        <li class="list-group-item"><strong>Groupe "eau salée" :</strong> 100 mL d'eau distillée + 3,5 g de sel (concentration océanique) + 15g de glaçon</li>
+                        <li class="list-group-item"><strong>Groupe "eau gazeuse" :</strong> 100 mL d'eau gazeuse (sans agitation pour éviter la perte de CO₂) + 15g de glaçon</li>
+                    </ul>
+                    
+                    <h4>Étape 2 : Mesures initiales</h4>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">Peser chaque glaçon (masse initiale m₀)</li>
+                        <li class="list-group-item">Mesurer la température initiale (T₀) de chaque liquide</li>
+                    </ul>
+                    
+                    <h4>Étape 3 : Suivi de la fusion</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Placer chaque bécher dans des conditions identiques (température ambiante contrôlée)</li>
+                        <li class="list-group-item">Toutes les 2 minutes :
+                            <ul>
+                                <li>Mesurer la température du liquide</li>
+                                <li>Noter l'état du glaçon (% de fusion visuel)</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item">Arrêt lorsque le glaçon a complètement fondu</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conditions Initiales -->
+        <div class="row mb-5">
+            <div class="col">
+                <h2 class="mb-4">Conditions Initiales</h2>
+                <div class="table-responsive results-table">
+                    <table class="table table-striped">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Groupe</th>
+                                <th>Masse initiale (m₀)</th>
+                                <th>Température initiale (T₀)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Groupe témoin</td>
+                                <td>14,5 g</td>
+                                <td>20,5 ºC</td>
+                            </tr>
+                            <tr>
+                                <td>Groupe "eau salée"</td>
+                                <td>16,1 g</td>
+                                <td>21,5 ºC</td>
+                            </tr>
+                            <tr>
+                                <td>Groupe "eau gazeuse"</td>
+                                <td>15,2 g</td>
+                                <td>21 ºC</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Résultats -->
+        <div class="row mb-5">
+            <div class="col">
+                <h2 class="mb-4">Résultats des Mesures</h2>
+                
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-header bg-primary text-white">
+                                Groupe témoin (4min)
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Temps</th>
+                                            <th>Température</th>
+                                            <th>Fusion</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>0:00</td>
+                                            <td>20,5ºC</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2:00</td>
+                                            <td>12,5ºC</td>
+                                            <td>30%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4:00</td>
+                                            <td>10,5ºC</td>
+                                            <td>100%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-header bg-primary text-white">
+                                Groupe "eau gazeuse" (3min30)
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Temps</th>
+                                            <th>Température</th>
+                                            <th>Fusion</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>0:00</td>
+                                            <td>21ºC</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2:00</td>
+                                            <td>12,5ºC</td>
+                                            <td>80%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3:30</td>
+                                            <td>10,3ºC</td>
+                                            <td>95%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-header bg-primary text-white">
+                                Groupe "eau salée" (5min)
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Temps</th>
+                                            <th>Température</th>
+                                            <th>Fusion</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>0:00</td>
+                                            <td>21,5ºC</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2:00</td>
+                                            <td>15,4ºC</td>
+                                            <td>50%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4:00</td>
+                                            <td>12,4ºC</td>
+                                            <td>70%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5:00</td>
+                                            <td>10,4ºC</td>
+                                            <td>85%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="row">
+            <div class="col">
+                <div class="conclusion-box p-4">
+                    <h2 class="mb-3">Conclusion</h2>
+                    <p>Nos résultats indiquent que le CO₂ dissous accélère la fonte des glaces, tandis qu'une salinité élevée la ralentit. Ces mécanismes pourraient influencer la dynamique des banquises dans un contexte de réchauffement climatique, appelant à une meilleure compréhension des interactions océan-glace-atmosphère.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
